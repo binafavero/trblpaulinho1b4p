@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ConclusaoPedidoActivity">
+
+
+
+    <TextView
+        android:id="@+id/tvClientes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Responsavel pelo pedido: "
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp" />
+    <ListView
+        android:id="@+id/lvItensPedidos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp" />
+
+
+    <TextView
+        android:id="@+id/tvValorTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valor Total do Pedido: "
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp" />
+
+    <RadioGroup
+        android:id="@+id/rgFormaPgmt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/rbAVista"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:text="À Vista" />
+
+        <RadioButton
+            android:id="@+id/rbAPrazo"
+            android:layout_width="191dp"
+            android:layout_height="match_parent"
+            android:text="À Prazo" />
+    </RadioGroup>
+
+
+    <EditText
+        android:id="@+id/edtQuantidadeParcelas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Quantidade de Parcelas"
+        android:inputType="number"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp" />
+
+
+    <Button
+        android:id="@+id/btFinalizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Concluir Pedido"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp" />
+
+</LinearLayout>

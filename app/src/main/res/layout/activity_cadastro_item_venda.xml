@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF"
+    tools:context=".CadastroItemVendaActivity">
+
+    <EditText
+        android:id="@+id/tvItensCad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Responsável pelo pedido:"
+        android:textSize="18sp"
+        android:backgroundTint="#E91E63"
+        android:layout_marginTop="46dp"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/edCodItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cadastro do Item"
+        android:textSize="18sp"
+        android:backgroundTint="#E91E63"
+        android:layout_marginBottom="40dp" />
+
+    <EditText
+        android:id="@+id/edDescItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Descrição do Item"
+        android:textSize="18sp"
+        android:backgroundTint="#E91E63"
+        android:layout_marginBottom="40dp" />
+
+    <EditText
+        android:id="@+id/edVlUni"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Valor por Unidade"
+        android:textSize="18sp"
+        android:backgroundTint="#E91E63"
+        android:layout_marginBottom="40dp"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/btSalvarItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SALVAR ITEM"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:background="#E91E63"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:radius="30dp" />
+
+</LinearLayout>
